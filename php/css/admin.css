@@ -1,0 +1,85 @@
+body {
+    height: 100vh;
+    background: #15181f;
+}
+
+/*permet d'agrandir la page lorsqu'il y a trop de cartes en hauteur et laisse une marge en bas de la page */
+section {
+    min-height: 100vh;
+    margin-bottom: 2%;
+}
+
+/* gestion de la navbar */
+#sidebar { 
+    max-width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    font-size: 1.2vw;
+}
+/*gestion des icones de la navbar */
+#sidebar i { 
+    color: #f2f2f2;
+    font-size: 28px;
+    display: none;
+}
+
+/* gestion de la navbar pour les écrans de moins de 1024px de large */
+@media (max-width: 1024px) {
+    #sidebar {
+        width: 15%;
+        position: fixed;
+    }
+
+    a {
+        display: none !important;
+    }
+
+    #sidebar i {
+        display: block;
+    }
+}
+
+section {
+    min-height: 100vh;
+    margin-bottom: 2%;
+}
+
+/* gestion du positionnement du dashboard sur la page */
+#dashboard {
+    width: 85%;
+    margin-left: 15%;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+/* gestion du titre "dashboard" */
+#dashboard h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 3%;
+}
+
+/* gère la taille des sections*/
+.section-container {
+    width: 100%;
+    height: 100%;
+}
+
+.section-container h1 {
+    text-align: center;
+    font-size: 100px;
+}
+
+/* gestion de l'ombre des cartes (éléments du dashboard) */
+.card-shadow {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#login {
+    padding-top: 50px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
